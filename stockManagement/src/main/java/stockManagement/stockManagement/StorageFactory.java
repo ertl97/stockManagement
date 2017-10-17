@@ -12,7 +12,6 @@ public class StorageFactory {
 	
 	/**
 	 * In dieser Methode wird abgefragt welche Speicher möglichkeit man auswählt.
-	 * @param storageType
 	 * @return Storage
 	 */
 	public static Storage getStorage(String storageType) {

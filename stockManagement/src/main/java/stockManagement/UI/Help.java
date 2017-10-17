@@ -7,7 +7,6 @@ import java.util.Scanner;
  * die Befehle eingehen und bekommt mehr Informationen über den ausgewählten Befehl.
  *
  * @author Daniel
- * @verion 1.0
  *
  */
 

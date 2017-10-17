@@ -29,7 +29,6 @@ public class InMemory implements Storage{
 	 * Die Methode "stockArticle" fügt einen neuen Artikel in das 2d Array hinzu.
 	 * Es muss als Parameter ein "Article" angegeben werden. 
 	 * @param article Article
-	 * @return Nothing
 	 */
 	public void stockArticle(Article article) {
 		for (int x = 0; x < column; x++){
@@ -53,7 +52,6 @@ public class InMemory implements Storage{
 	 * Die Methode "swapArticle" entfernt einen bestehenden Artikel aus dem 2d Array.
 	 * Als Parameter muss ein int übergeben werden.
 	 * @param article Integer
-	 * @return Nothing
 	 */
 	public void swapArticle(int article) {
 		for (int x = 0; x < column; x++){
@@ -104,8 +102,6 @@ public class InMemory implements Storage{
 	 * Die Methode "positionContent" gibt den Inhalt einer bestimmten Position zurück.
 	 * Dabei müssen die beiden Parameter column und row eingegeben werden.
 	 * @param column, row Integer
-	 * @return Nothing
-	 * @exception NullPointerException
 	 */
 	public void positionContent(int column, int row) {
 		try{
@@ -118,7 +114,6 @@ public class InMemory implements Storage{
 	
 	/**
 	 * Die Methode "inventory" gibt den Inhalt des gesammten Inventars an.
-	 * @return Nothing
 	 */
 	public void inventory(){
 		//System.out.println(Arrays.deepToString(rack));

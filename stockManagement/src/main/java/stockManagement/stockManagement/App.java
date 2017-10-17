@@ -18,7 +18,6 @@ public class App
 	/**
 	 * Main Methode.
 	 * @param args not Used
-	 * @return Nothing
 	 */
     public static void main( String[] args )
     {
