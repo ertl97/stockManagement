@@ -10,6 +10,24 @@
   <name>stockManagement</name>
   <url>http://maven.apache.org</url>
 
+	<build>
+	    <plugins>
+	      <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-jar-plugin</artifactId>
+	        <version>3.0.2</version>
+	        <configuration>
+	          <archive>
+	            <manifest>
+	            	<mainClass>stockManagement.stockManagement.App</mainClass>
+	            	<addClasspath>true</addClasspath>
+	            </manifest>
+	          </archive>
+	        </configuration>
+	      </plugin>
+	    </plugins>
+	  </build>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
