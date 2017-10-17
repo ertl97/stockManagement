@@ -4,6 +4,15 @@ import java.util.Scanner;
 
 import stockManagement.stockManagement.App;
 
+/**
+ * In dieser Klasse wird eine Benutzerabfrage gestartet, welche die Spaltennummer und die Zeilennummer
+ * abfragt und den zu diser Position gehörenden Artikel ausgibt.
+ * 
+ * @author Daniel
+ * @version 1.0
+ *
+ */
+
 public class Content {
 
 	private static Scanner scan = new Scanner(System.in);

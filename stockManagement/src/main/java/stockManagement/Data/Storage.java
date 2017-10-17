@@ -17,5 +17,6 @@ public interface Storage {
 	public String articlePosition(String article);
 	public void positionContent(int column, int row);
 	public void inventory();
+	public Article[][] getRack();
 
 }

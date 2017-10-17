@@ -5,6 +5,14 @@ import java.util.Scanner;
 import stockManagement.stockManagement.App;
 import stockManagement.stockManagement.Article;
 
+/**
+ * In diser Klasse wird eine Benutzereingabe gestartet, welche die einzelnen Parameter 
+ * zur Erstellung des Artikels abfragt. Anschließend wird ein Artikel erstellt.
+ * 
+ * @author Daniel
+ * @version 1.0
+ */
+
 public class Stock {
 
 	private static Scanner scan = new Scanner(System.in);

@@ -10,7 +10,6 @@ import stockManagement.stockManagement.Article;
  *
  * @author Daniel
  * @version 1.0
- *
  */
 
 public class InMemory implements Storage{
@@ -26,8 +25,12 @@ public class InMemory implements Storage{
 		//rack =  new Article[column][row];
 	}
 
-
-
+	/**
+	 * Die Methode "stockArticle" fügt einen neuen Artikel in das 2d Array hinzu.
+	 * Es muss als Parameter ein "Article" angegeben werden. 
+	 * @param article Article
+	 * @return Nothing
+	 */
 	public void stockArticle(Article article) {
 		for (int x = 0; x < column; x++){
 			for(int y = 0; y <row ; y++){
@@ -45,7 +48,13 @@ public class InMemory implements Storage{
 		}
 
 	}
-
+	
+	/**
+	 * Die Methode "swapArticle" entfernt einen bestehenden Artikel aus dem 2d Array.
+	 * Als Parameter muss ein int übergeben werden.
+	 * @param article Integer
+	 * @return Nothing
+	 */
 	public void swapArticle(int article) {
 		for (int x = 0; x < column; x++){
 			for(int y = 0; y <row ; y++){
@@ -63,7 +72,12 @@ public class InMemory implements Storage{
 		}
 
 	}
-
+	
+	/**
+	 * Die Methode "articlePosition" gibt die Position eines Artikels zurück.
+	 * @param article String
+	 * @return String Position des Artikels
+	 */
 	public String articlePosition(String article) {
 		int positionX = 0;
 		int positionY = 0;
@@ -85,7 +99,14 @@ public class InMemory implements Storage{
 		}
 		return "Zeile: "+positionY+ " Spalte: "+positionX;
 	}
-
+	
+	/**
+	 * Die Methode "positionContent" gibt den Inhalt einer bestimmten Position zurück.
+	 * Dabei müssen die beiden Parameter column und row eingegeben werden.
+	 * @param column, row Integer
+	 * @return Nothing
+	 * @exception NullPointerException
+	 */
 	public void positionContent(int column, int row) {
 		try{
 			System.out.println(rack[column][row].toString());
@@ -94,7 +115,11 @@ public class InMemory implements Storage{
 		}
 
 	}
-
+	
+	/**
+	 * Die Methode "inventory" gibt den Inhalt des gesammten Inventars an.
+	 * @return Nothing
+	 */
 	public void inventory(){
 		//System.out.println(Arrays.deepToString(rack));
 		System.out.println("-----------Inventar--------------");
@@ -112,6 +137,10 @@ public class InMemory implements Storage{
 		}
 		System.out.println("---------------------------------");
 
+	}
+	
+	public Article[][] getRack() {
+		return rack;
 	}
 
 
