@@ -11,7 +11,7 @@ import stockManagement.UI.Menue;
  */
 public class App
 {
-	private static Storage storage = new InMemory();
+	private static Storage storage = StorageFactory.getStorage("InMemory");
 	private static Menue menue = new Menue();
 	
 
