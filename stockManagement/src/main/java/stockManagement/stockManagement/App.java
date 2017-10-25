@@ -2,7 +2,6 @@ package stockManagement.stockManagement;
 
 import stockManagement.Data.InMemory;
 import stockManagement.Data.Storage;
-import stockManagement.UI.Menue;
 
 /**
  * Diese Klasse enthält die main Methode.
@@ -22,9 +21,7 @@ public class App
 	 */
     public static void main( String[] args )
     {
-    	
     	storage.configurateSize(5,6);
-
     }
 
     /**
